@@ -1,10 +1,11 @@
 package valyaJmartPK.jmart_android.request;
 
+import androidx.annotation.Nullable;
+
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.toolbox.StringRequest;
 
-import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,6 +24,8 @@ public class RegisterRequest extends StringRequest {
         params.put("password", password);
     }
 
+    @Nullable
+    @Override
     public Map<String, String> getParams(){
         return params;
     }
