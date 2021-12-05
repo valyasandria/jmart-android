@@ -9,18 +9,17 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RegisterRequest extends StringRequest {
-
-    private static final String URL = "http://10.0.2.2:8080/account/register";
+public class StoreRequest extends StringRequest {
+    private static final String URL = "http://10.0.2.2:8080/product/create";
     private final Map<String, String> params;
 
-    public RegisterRequest(String name, String email, String password, Response.Listener<String> listener, Response.ErrorListener errorListener)
+    public StoreRequest(String name, String address, String phoneNumber, Response.Listener<String> listener, Response.ErrorListener errorListener)
     {
         super(Request.Method.POST, URL, listener, errorListener);
         params = new HashMap<>();
         params.put("name", name);
-        params.put("email", email);
-        params.put("password", password);
+        params.put("address", address);
+        params.put("phone number", phoneNumber);
     }
 
     @Nullable
@@ -28,4 +27,5 @@ public class RegisterRequest extends StringRequest {
     public Map<String, String> getParams(){
         return params;
     }
+
 }

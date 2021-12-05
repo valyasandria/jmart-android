@@ -23,16 +23,4 @@ public class Account extends Serializable {
 
     }
 
-    public boolean validate(String email, String password)
-    {
-        //validasi email
-        Pattern emailPattern = Pattern.compile(REGEX_EMAIL);
-        Matcher matcher = emailPattern.matcher(email);
-
-        //validasi password
-        Pattern passPattern = Pattern.compile(REGEX_PASSWORD);
-        Matcher matchPass = passPattern.matcher(password);
-
-        return matcher.find() && matchPass.find();
-    }
 }
