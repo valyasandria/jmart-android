@@ -6,6 +6,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+/**
+ * Create two tab lay out (products and filter)
+ * @author Valya Sandria Akiela
+ */
 public class FragmentAdapter extends FragmentStateAdapter {
     public FragmentAdapter(@NonNull FragmentManager fragmentManager, @NonNull Lifecycle lifecycle) {
         super(fragmentManager, lifecycle);

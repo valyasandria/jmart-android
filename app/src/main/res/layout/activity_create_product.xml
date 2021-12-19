@@ -18,7 +18,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
-            app:cardBackgroundColor="#D4CFDD"
+            app:cardBackgroundColor="#F4EFE8"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
 
@@ -145,6 +145,7 @@
                     android:textSize="16dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textViewCat" />
+
 
                 <RadioButton
                     android:id="@+id/radioButtonNew"

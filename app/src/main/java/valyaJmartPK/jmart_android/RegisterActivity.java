@@ -18,8 +18,11 @@ import org.json.JSONObject;
 
 import valyaJmartPK.jmart_android.request.RegisterRequest;
 
+/**
+ * Register new account and validate their name, email, and password
+ * @author Valya Sandria Akiela
+ */
 public class RegisterActivity extends AppCompatActivity {
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +34,9 @@ public class RegisterActivity extends AppCompatActivity {
         Button button = findViewById(R.id.button);
         EditText editText2 = findViewById(R.id.editTextTextPersonName);
 
+        /**
+         * user register their account
+         */
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

@@ -21,7 +21,10 @@ import org.json.JSONObject;
 import valyaJmartPK.jmart_android.model.Account;
 import valyaJmartPK.jmart_android.request.LoginRequest;
 
-
+/**
+ * Login to application with registered account
+ * @author Valya Sandria Akiela
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private static final Gson gson = new Gson();
@@ -42,7 +45,9 @@ public class LoginActivity extends AppCompatActivity {
         TextView textView = findViewById(R.id.textView2);
         TextView textView1 = findViewById(R.id.textView3);
 
-        //login button
+        /**
+         * user login with registered account
+         */
         button.setOnClickListener(new View.OnClickListener() {
 
             Response.ErrorListener errorListener = resp -> Toast.makeText(LoginActivity.this, "System ERROR",Toast.LENGTH_SHORT).show();
@@ -78,10 +83,13 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
 
-        //register text
+        /**
+         * register new account
+         */
         textView1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Toast.makeText(LoginActivity.this, "Register Account", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
             }

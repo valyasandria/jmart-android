@@ -1,5 +1,9 @@
 package valyaJmartPK.jmart_android.model;
 
+/**
+ * Specify the category of products being sold
+ * @author Valya Sandria Akiela
+ */
 public enum ProductCategory {
     BOOK,
     KITCHEN,

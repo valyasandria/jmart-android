@@ -1,7 +1,10 @@
 package valyaJmartPK.jmart_android.model;
 
-import java.util.HashMap;
+/**
+ * Assign id to an object
+ * @author Valya Sandria Akiela
+ */
 
 public class Serializable {
-    public final int id = -1;
+    public int id;
 }
